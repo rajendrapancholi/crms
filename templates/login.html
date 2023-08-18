@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}Login{% endblock title %}
+{% block body %}
+<h1>This is login page<h1>
+    <form action="home" method="post">
+    <div class="main">
+        <div class="item">
+            <label for="username">Enter user name</label>
+            <input type="text" name="username" id="username" placeholder="Enter user name">
+        </div>
+        <div class="item">
+            <label for="password">Enter user name</label>
+            <input type="password" name="username" id="password" placeholder="Create password">
+        </div>
+        <div class="btn">
+            <div>
+                <button type="submit">Save</button>
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    </form>
+
+{% endblock body %}
