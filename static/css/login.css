@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+.container{
+    padding-top: 3rem;
+    box-shadow: 2px 2px 2px 2px rgba(163, 162, 162, 0.548);
+    margin: 2rem auto;
+    border-radius: 1rem;
+    border: 2px solid rgb(219, 223, 224);
+    width: 50ch;
+    height: 550px;
+    display: block;
+    background-color: hsl(180, 83%, 95%);
+    
+}
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.elements{
+    text-align: justify;
+    margin: 4rem;
+
+}
+.elements li{
+    list-style: none;
+    padding: 2%;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]
+ {
+  font: 1.25rem ;
+  margin-top: 0.345rem;
+  display: block;
+  border: 1px solid rgb(87, 87, 87);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus
+ {
+  font: 1.25rem ;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(220, 255, 227);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.button {
+    transition-duration: 0.4s;
+}
+.btn{
+    text-align: center;
+
+}
+.btn button{
+    font-size: 150%;
+    
+  }
+  button[type="submit"]{
+  border: 2px solid rgb(43, 3, 3);
+  background-color: hsl(213, 73%, 50%);
+  color: white;
+  border-radius: 1rem;
+  display: inline-block;
+  width: 40%;
+}
+button[type="reset"] {
+  border: 2px solid rgb(43, 3, 3);
+  background-color: hsl(145, 100%, 18%);
+  color: white;
+  border-radius: 1rem;
+  display: inline-block;
+  width: 40%;
+}
+
+button[type="submit"]:hover {
+  background-color: hsl(213, 100%, 30%);
+}
+
+button[type="reset"] {
+  text-decoration: underline;
+  margin-left: 1rem;
+}
+
+button[type="reset"]:hover {
+  text-decoration: none;
+  background-color: hsl(145, 100%, 10%);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px hsl(213, 90%, 70%);
+}

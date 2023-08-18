@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navBar{
+    display: flex;
+}
+
+.background{
+    background:rgb(0, 0, 0,0.8) url(static/imgs/bg.jpg);
+}
+
+
+.nav-list{
+    width: 70%;
+    display: flex; 
+}
+.logo{
+    width: 7%;
+}
+
+.logo img{
+    border: 2px solid aqua;
+    border-radius: 100%;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    margin-left: 90%;
+    width: 80%;
+}
+
+.rightNav{
+    width: 30%;
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+    align-items: center;
+  
+}
+
+.list{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+    display: flex;
+    
+}
+
+.list li a{
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(230, 248, 248);
+    
+}
+
+.list li a:hover{
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+}
+
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    background-color: rgb(37, 37, 37);
+    align-items: center;
+    justify-content: center;
+    color: rgb(230, 247, 241);
+    text-align: center;
+    display: flex;
+    
+}
+.footer p a{
+    text-decoration: none;
+    color: rgb(230, 247, 241);
+    cursor: pointer;
+}
+.footer p a:hover{
+    color: cyan;
+    cursor: pointer;
+}
