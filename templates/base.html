@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="{% static 'fav/favicon.ico' %}">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     </head>
     <body>
         <div class="navBar background">
@@ -23,9 +25,13 @@
                         <li><a href="service">Services</a></li>
                         <li><a href="about">About Us</a></li>
                         <li><a href="contact">Contact Us</a></li>
-                        <li><a href="login">Login</a></li>
-                        <li><a href="signin">Sign In</a></li>
-                    </span>
+                        {% if user.is_authenticated %}
+                            <li><a href="{% url 'logout' %}">Logout</a></li>
+                        {% else %}
+                            <li><a href="{% url 'login' %}">Login</a></li>
+                            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                        {% endif %}
+                        </span>
                  </ul>
             <!-- </div> -->
 
@@ -35,10 +41,14 @@
             </div>
             
         </div>
+        {% if messages %}
+         {% for message in messages %}
+            <strong>{{message}}</strong>
+         {% endfor %}
+        {% endif %}
         {% block body %}{% endblock body %}
         <div class="footer">
-        {% block footer %}{% endblock footer %}
-            
+            {% block footer %}{% endblock footer %}
             <p>Copyright © 2023 - 2024 <a href="http://www.rajendrapancholi.blogspot.com" target="_blank">Rajendra Pancholi</a></p>
         </div>
     </body>
