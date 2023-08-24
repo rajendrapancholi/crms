@@ -15,7 +15,7 @@ body{
     border-radius: 1rem;
     border: 2px solid rgb(219, 223, 224);
     width: 50ch;
-    height: 550px;
+    height: 37vh;
     display: block;
     background-color: hsl(180, 83%, 95%);
     
@@ -30,17 +30,12 @@ button {
   padding: 0;
   margin: 0;
 }
-.elements{
+.item{
     text-align: justify;
-    margin: 4rem;
-
-}
-.elements li{
-    list-style: none;
-    padding: 2%;
+    margin: 3rem;
+    /* padding: 2%; */
 }
 input[type="text"],
-input[type="email"],
 input[type="password"]
  {
   font: 1.25rem ;
@@ -68,12 +63,17 @@ input[type="password"]:focus
 .button {
     transition-duration: 0.4s;
 }
+.btn-form{
+  display: inline;
+  margin: auto;
+}
 .btn{
-    text-align: center;
-
+  text-align: center;
+  align-items: center;
 }
 .btn button{
-    font-size: 150%;
+    font-size: 2rem;
+    display: inline-block;
     
   }
   button[type="submit"]{
@@ -81,7 +81,6 @@ input[type="password"]:focus
   background-color: hsl(213, 73%, 50%);
   color: white;
   border-radius: 1rem;
-  display: inline-block;
   width: 40%;
 }
 button[type="reset"] {
@@ -89,7 +88,6 @@ button[type="reset"] {
   background-color: hsl(145, 100%, 18%);
   color: white;
   border-radius: 1rem;
-  display: inline-block;
   width: 40%;
 }
 
@@ -111,4 +109,16 @@ select:focus,
 textarea:focus {
   outline: none;
   box-shadow: 0 0 0 3px hsl(213, 90%, 70%);
+}
+.footer{
+  width: 100%;
+    position: fixed;
+    bottom: 0%;
+    background-color: rgb(37, 37, 37);
+    align-items: center;
+    justify-content: center;
+    color: rgb(230, 247, 241);
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
 }

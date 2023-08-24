@@ -21,3 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("r_app.urls")),
 ]
+admin.site.site_header = "Rajendra Pancholi Admin"
+admin.site.site_title = "Rajendra Pancholi Admin Portal"
+admin.site.index_title = "Welcome to Rajendra Pancholi"
